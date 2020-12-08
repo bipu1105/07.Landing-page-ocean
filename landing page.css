@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #4d90a1;
+    transition: 2s;
+}
+
+.container{
+    height: 85vh;
+    width: 80vw;
+    background: #57a2b4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 7px 7px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.nav-bar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    flex-basis: 50%;
+    margin-left: 15px;
+    /* background: lightcoral; */
+}
+.logo img{
+    height: 45px;
+}
+
+.nav-items{
+    flex-basis: 50%;
+    /* background: lightgreen; */
+    height: 100%;
+}
+
+.nav-items ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 80px;
+    background: rgba(174,216,230,0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 0px 0px 10px 10px;
+    transform: translateY(-80px);
+    transition: 0.3s;
+}
+
+.nav-items ul li{
+    list-style: none;
+    transition: 0.2s;
+}
+
+.nav-items ul li:hover{
+    transform: scale(1.08);
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    color: white;
+} 
+
+.content{
+    height: 85%;
+    width: 100%;
+    /* background: royalblue; */
+    position: relative;
+}
+
+.content-text{
+    text-align: right;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+
+.content-text h1{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.content-text p{
+    color: white;
+    margin-top: 10px;
+}
+
+.content-text button{
+    height: 30px;
+    width: 80px;
+    outline: none;
+    color: white;
+    letter-spacing: 1.5px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn1{
+    background: #3c6a77;
+    border: none;
+}
+
+.btn2{
+    background: none;
+    border: 3px solid #3c6a77;
+    margin-left: 25px;
+}
+
+.btn1:hover,.btn2:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.content-image  img{
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    top: -38px;
+    left: 60px;
+}
+
+.social-media{
+    margin-right: 30px;
+}
+
+.social-media ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.social-media ul li{
+    list-style: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 8px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.social-media ul li:hover{
+    transform: scale(1.08);
+}
+
+.social-media ul li a{
+    color: #568e9c;
+}
+.object1{
+    height: 250px;
+    position: absolute;
+    top: -75px;
+    left: -20px;
+    z-index: -1;
+}
+
+.object2{
+    height: 250px;
+    position: absolute;
+    right: -30px;
+    bottom: -85px;
+    z-index: -1;
+}
+
+.bar,.remove{
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.bar{
+    color: white;
+}
+
+.remove{
+    color: rgb(231,71,71);
+    display: none;
+}
+
+.mode{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    bottom: 17px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 2s;
+}
+
+/* class for javscript click event */
+
+.navBar-js{
+    transform: translateY(0px) !important;
+}
+
+.barIcon-js{
+    display: none;
+}
+
+.removeIcon-js{
+    display: flex;
+}
+
+.container-js{
+    background: rgb(37,37,37) !important;
+}
+
+.body-js{
+    background: rgb(56,55,55) !important;
+}
+
+.mode-js{
+    transform: rotateY(180deg);
+}
